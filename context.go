@@ -681,7 +681,7 @@ func (dc *Context) SetFontFace(fontFace font.Face) {
 	dc.fontHeight = float64(fontFace.Metrics().Height) / 64
 }
 
-func (dc *Context) SetFontFaceWithPoints(fontFace font.Face) {
+func (dc *Context) SetFontFaceWithPoints(fontFace font.Face, points float64) {
 	dc.fontFace = fontFace
 	dc.fontHeight = points * 72 / 96
 }
